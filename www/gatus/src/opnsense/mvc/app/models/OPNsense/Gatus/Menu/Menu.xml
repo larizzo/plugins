@@ -1,0 +1,5 @@
+<menu>
+    <Services>
+        <Gatus VisibleName="Gatus" cssClass="fa fa-heartbeat fa-fw" url="/ui/gatus/"/>
+    </Services>
+</menu>

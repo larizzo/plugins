@@ -1,0 +1,27 @@
+<model>
+    <mount>//OPNsense/Gatus</mount>
+    <version>1.0.0</version>
+    <description>Gatus settings</description>
+    <items>
+        <general>
+            <enabled type="BooleanField">
+                <Default>0</Default>
+                <Required>Y</Required>
+            </enabled>
+            <root type="BooleanField">
+                <Default>0</Default>
+                <Required>Y</Required>
+            </root>
+            <log_level type="OptionField">
+                <Default>INFO</Default>
+                <Required>Y</Required>
+                <OptionValues>
+                    <DEBUG>Debug</DEBUG>
+                    <INFO>Info</INFO>
+                    <WARN>Warning</WARN>
+                    <ERROR>Error</ERROR>
+                </OptionValues>
+            </log_level>
+        </general>
+    </items>
+</model>

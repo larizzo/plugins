@@ -1,0 +1,10 @@
+Gatus is a health dashboard that monitors services using HTTP, ICMP,
+TCP and DNS queries and evaluates the results against conditions on
+the status code, response time, certificate expiration, body and
+more. Each check can be paired with alerting via email, ntfy,
+Slack, Discord, Telegram and many other providers.
+
+This plugin manages the Gatus service. Endpoints, alerting, storage
+and the web listener are configured in /usr/local/etc/gatus.yaml.
+
+WWW: https://gatus.io

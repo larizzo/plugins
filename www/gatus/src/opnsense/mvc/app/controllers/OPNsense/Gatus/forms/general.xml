@@ -1,0 +1,24 @@
+<form>
+    <field>
+        <type>header</type>
+        <label>General Settings</label>
+    </field>
+    <field>
+        <id>gatus.general.enabled</id>
+        <label>Enable</label>
+        <type>checkbox</type>
+        <help>Enable the Gatus service. Endpoints, alerting, storage and the web listener are configured in /usr/local/etc/gatus.yaml. Gatus listens on port 8080 on all interfaces unless the web section of that file says otherwise. This file is not part of the OPNsense configuration backup.</help>
+    </field>
+    <field>
+        <id>gatus.general.root</id>
+        <label>Run as Root</label>
+        <type>checkbox</type>
+        <help>Gatus runs as the unprivileged www user by default. ICMP (ping) checks need raw sockets, which only root can open on FreeBSD, so enable this if the configuration uses icmp:// endpoints. Use with care: the whole Gatus process, including its web server, then runs as root.</help>
+    </field>
+    <field>
+        <id>gatus.general.log_level</id>
+        <label>Log Level</label>
+        <type>dropdown</type>
+        <help>Verbosity of /var/log/gatus.log. Info logs the result of every check.</help>
+    </field>
+</form>
